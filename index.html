@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Plataforma</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Login - Plataforma de Vendas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
-  <div class="auth-container">
-    <div class="auth-left">
-      <img src="assets/img/logo-placeholder.png" alt="Logo" class="auth-bg-logo">
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Bem-vindo(a) de volta</h1>
+      <p>Acesse sua conta e gerencie suas vendas</p>
     </div>
-    <div class="auth-form">
-      <h1>Entrar na conta</h1>
-      <p>Ainda não tem uma conta? <a href="cadastro.html">Registre-se agora</a>.</p>
-      <form>
-        <label>Email</label>
-        <input type="email" placeholder="Digite seu e-mail" required />
-        <label>Senha</label>
-        <input type="password" placeholder="Digite sua senha" required />
-        <a href="#">Esqueci minha senha</a>
-        <button type="submit">Entrar na minha conta</button>
+    <div class="right">
+      <form id="login-form">
+        <h2>Login</h2>
+        <input type="email" placeholder="Seu e-mail" id="email" required />
+        <input type="password" placeholder="Senha" id="password" required />
+        <button type="submit">Entrar</button>
+        <p class="error" id="error-msg"></p>
       </form>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
